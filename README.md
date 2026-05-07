@@ -1,16 +1,33 @@
-# React + Vite
+# 🚗 Sistema de Gestão de Vagas - Condomínio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um ecossistema completo para controle de estacionamento. Este repositório contém o **Front-end** desenvolvido em React, que consome uma **API REST** robusta feita em Spring Boot.
 
-Currently, two official plugins are available:
+## 🔗 Integração Full Stack
+Este projeto faz parte de uma solução completa:
+*   **Back-end:** API desenvolvida em **Java + Spring Boot** (CRUD completo).
+*   **Front-end:** Interface desenvolvida em **React + Vite**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📋 Informações Gerenciadas
+O sistema controla todos os detalhes necessários para a segurança do condomínio:
+*   **Vaga:** Número da vaga.
+*   **Veículo:** Placa, marca, modelo e cor.
+*   **Morador:** Nome do responsável, apartamento e bloco.
 
-## React Compiler
+## 🚀 Status das Funcionalidades
+- [x] **Cadastro (Create):** Envio de dados via Axios/Fetch para a API Spring.
+- [x] **Listagem (Read):** Consumo do endpoint GET para exibir as vagas.
+- [ ] **Edição (Update):** Integração com o método PUT da API (Em breve).
+- [ ] **Exclusão (Delete):** Integração com o método DELETE da API (Em breve).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tecnologias do Front-end
+- **React.js + Vite**
+- **Tailwind CSS** (Tabelas alinhadas e design limpo)
+- **React Router DOM** (Navegação dinâmica)
 
-## Expanding the ESLint configuration
+## 📦 Como rodar
+1.  Certifique-se de que o **Back-end (Spring Boot)** esteja rodando.
+2.  Instale as dependências: `npm install`
+3.  Inicie o projeto: `npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*Nota: Para detalhes sobre a estrutura do banco de dados e endpoints, consulte o repositório do Back-end.*
